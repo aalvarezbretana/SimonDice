@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    tools:context=".Verde">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Simon Dice"
+        android:textColor="#FDFDFD"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <Button
+        android:id="@+id/greenButton"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="233dp"
+        android:background="#009C619E"
+        android:backgroundTint="#37FF00"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <Button
+        android:id="@+id/yellowButton"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_bellow="@id/greenButton"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="233dp"
+        android:background="#009C619E"
+        android:backgroundTint="#FFFB00"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <Button
+        android:id="@+id/blueButton"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_bellow="@id/yellowButton"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="233dp"
+        android:background="#009C619E"
+        android:backgroundTint="#0073FF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876" />
+
+    <Button
+        android:id="@+id/redButton"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_bellow="@id/blueButton"
+        android:layout_marginStart="159dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="60dp"
+        android:background="#009C619E"
+        android:backgroundTint="#FF0000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_bellow="@id/blueButton"
+        android:layout_marginStart="159dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="60dp"
+        android:background="#009C619E"
+        android:backgroundTint="#4A1A77"
+        android:text="Reiniciar"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
