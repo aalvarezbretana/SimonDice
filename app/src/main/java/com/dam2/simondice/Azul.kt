@@ -7,10 +7,10 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 
-class Verde : AppCompatActivity() {
+class Azul : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_verde)
+        setContentView(R.layout.activity_azul)
 
         val title = findViewById<TextView>(R.id.titleText)
         val scoreText = findViewById<TextView>(R.id.scoreText)
@@ -52,7 +52,7 @@ class Verde : AppCompatActivity() {
 
         fun onCorrect(answer: String, classNum: Int) {
             if (colors[count] == answer) {
-                val intent = Intent(this@Verde, activitiesArray[classNum])
+                val intent = Intent(this@Azul, activitiesArray[classNum])
                 if ((count + 1) == colors.size) {
                     gameOver("GANASTE")
                 } else {
@@ -84,7 +84,7 @@ class Verde : AppCompatActivity() {
             onCorrect("Red", 3)
         }
         restart.setOnClickListener{
-            val intent = Intent(this@Verde, MainActivity::class.java)
+            val intent = Intent(this@Azul, MainActivity::class.java)
             startActivity(intent)
         }
     }
